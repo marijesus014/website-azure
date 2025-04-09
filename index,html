@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog de Curiosidades</title>
+    <style>
+        :root {
+            --laranja: #ff6600;
+            --preto: #000000;
+            --branco: #ffffff;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: var(--branco);
+            margin: 0;
+            padding: 0;
+            color: var(--preto);
+        }
+
+        header {
+            background-color: var(--laranja);
+            color: var(--branco);
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: var(--preto);
+            color: var(--branco);
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: var(--branco);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .login, .post-form, .posts {
+            margin-bottom: 40px;
+        }
+
+        input, textarea, button {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        button {
+            background-color: var(--laranja);
+            color: var(--branco);
+            border: none;
+            cursor: pointer;
+        }
+
+        .post {
+            border: 1px solid var(--preto);
+            border-radius: 8px;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Blog de Curiosidades</h1>
+    </header>
+    <nav>
+        <a href="#login">Login</a>
+        <a href="#criar">Criar Post</a>
+        <a href="#posts">Todos os Posts</a>
+    </nav>
+
+    <div class="container">
+        <section id="login" class="login">
+            <h2>Login</h2>
+            <input type="text" placeholder="Usuário">
+            <input type="password" placeholder="Senha">
+            <button>Entrar</button>
+        </section>
+
+        <section id="criar" class="post-form">
+            <h2>Criar um novo post</h2>
+            <input type="text" placeholder="Título do post">
+            <textarea rows="5" placeholder="Escreva seu conteúdo aqui..."></textarea>
+            <button>Publicar</button>
+        </section>
+
+        <section id="posts" class="posts">
+            <h2>Todos os Posts</h2>
+            <div class="post">
+                <h3>Curiosidade sobre o Universo</h3>
+                <p>Você sabia que existem mais estrelas no universo do que grãos de areia em todas as praias da Terra?</p>
+            </div>
+            <div class="post">
+                <h3>História Curiosa</h3>
+                <p>Napoleão Bonaparte era uma vez atacado por coelhos durante uma caçada. Verdade mesmo!</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
